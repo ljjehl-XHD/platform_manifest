@@ -12,6 +12,8 @@
            fetch="https://github.com/CyanogenMod/" />
   <remote  name="aokp"
 	   fetch="https://github.com/AOKP/" />
+  <remote name="github"
+           fetch="git://github.com/" />
   <remote  name="xp"
            fetch="https://github.com/xplodwild" />
       
@@ -34,8 +36,6 @@
   <project path="developers/docs" name="platform/developers/docs" />
   <project path="developers/samples/android" name="platform/developers/samples/android" />
   <project path="development" name="platform/development" />
-  <project path="device/asus/grouper" name="platform_device_asus_grouper" remote="th" revision="jb-mr2" groups="notdefault,device,grouper" />
-  <project path="device/asus/tilapia" name="device_asus_tilapia" remote="th" revision="jb-mr2" groups="notdefault,device,tilapia" />
   <project path="device/common" name="android_device_common" remote="cm" revision="cm-10.2" />
   <project path="device/generic/armv7-a-neon" name="device/generic/armv7-a-neon" groups="pdk" />
   <project path="device/generic/common" name="device/generic/common" groups="pdk" />
@@ -46,29 +46,9 @@
   <project path="device/generic/mini-emulator-x86" name="device/generic/mini-emulator-x86" groups="pdk" /> 
   <project path="device/google/accessory/arduino" name="device/google/accessory/arduino" groups="device" />
   <project path="device/google/accessory/demokit" name="device/google/accessory/demokit" groups="device" />
-  <project path="device/lge/mako" name="device_lge_mako" remote="th" revision="jb-mr2" groups="notdefault,device,mako" />
-  <project path="device/htc/endeavoru" name="android_device_htc_endeavoru" remote="th" revision="jb-mr2" groups="notdefault,device,endeavouru" />
-  <project path="device/htc/tegra3-common" name="android_device_htc_tegra3-common" remote="th" revision="jb-mr2" groups="notdefault,device,htc" />
-  <project path="device/htc/m7tmo" name="android_device_htc_m7tmo" remote="th" revision="jb-mr2" groups="notdefault,device,m7tmo" />
-  <project path="device/htc/m7-common" name="android_device_htc_m7-common" remote="th" revision="jb-mr2" groups="notdefault,device,htc" />
-  <project path="device/htc/msm8960-common" name="android_device_htc_msm8960-common" remote="th" revision="jb-mr2" groups="notdefault,device,htc" />
+  <project path="device/htc/endeavoru" name="ljjehl-XHD/android_device_htc_endeavoru" remote="github" revision="jb-mr2" />
+  <project path="device/htc/tegra3-common" name="ljjehl-XHD/android_device_htc_tegra3-common" remote="github" revision="jb-mr2" />
   <project path="device/sample" name="device/sample" groups="pdk" />
-  <project path="device/motorola/msm8960-common" name="android_device_motorola_msm8960-common" remote="th" revision="jb-mr2" groups="notdefault,device,motorola" />
-  <project path="device/motorola/qcom-common" name="android_device_motorola_qcom-common" remote="th" revision="jb-mr2" groups="notdefault,device,motorola" />
-  <project path="device/motorola/xt926" name="android_device_motorola_xt926" remote="th" revision="jb-mr2" groups="notdefault,device,xt926" />
-  <project path="device/samsung/d2-common" name="android_device_samsung_d2-common" remote="cm" revision="cm-10.2" groups="notdefault,device,samsung" />
-  <project path="device/samsung/d2vzw" name="android_device_samsung_d2vzw" remote="th" revision="jb-mr2" groups="notdefault,device,d2vzw" />
-  <project path="device/samsung/maguro" name="platform_device_samsung_maguro" remote="th" revision="jb-mr2" groups="notdefault,device,maguro"/>
-  <project path="device/samsung/manta" name="device/samsung/manta" groups="notdefault,device,manta" />  
-  <project path="device/samsung/msm8960-common" name="android_device_samsung_msm8960-common" remote="cm" revision="cm-10.2" groups="notdefault,device,samsung" />
-  <project path="device/samsung/qcom-common" name="android_device_samsung_qcom-common" remote="cm" revision="cm-10.2" groups="notdefault,device,samsung" />
-  <project path="device/samsung/smdk4412-common" name="android_device_samsung_smdk4412-common" remote="th" revision="jb-mr2" groups="notdefault,device,samsung" />
-  <project path="device/samsung/smdk4412-qcom-common" name="android_device_samsung_smdk4412-qcom-common" remote="cm" revision="cm-10.2" groups="notdefault,device,samsung" />
-  <project path="device/samsung/t0lte" name="android_device_samsung_t0lte" remote="th" revision="jb-mr2" groups="notdefault,device,t0lte" />
-  <project path="device/samsung/t0ltetmo" name="android_device_samsung_t0ltetmo" remote="cm" revision="cm-10.2" groups="notdefault,device,t0lte" />
-  <project path="device/samsung/toro" name="platform_device_samsung_toro" remote="th" revision="jb-mr2" groups="notdefault,device,toro" />
-  <project path="device/samsung/toroplus" name="android_device_samsung_toroplus" remote="th" revision="jb-mr2" groups="notdefault,device,toroplus" />
-  <project path="device/samsung/tuna" name="platform_device_samsung_tuna" remote="th" revision="jb-mr2" groups="notdefault,device,tuna" />
   <project path="docs/source.android.com" name="platform/docs/source.android.com" />
   <project path="external/aac" name="platform/external/aac" />
   <project path="external/android-clat" name="platform/external/android-clat" />
@@ -103,7 +83,7 @@
   <project path="external/easymock" name="platform/external/easymock" />
   <project path="external/eclipse-basebuilder" name="platform/external/eclipse-basebuilder" />
   <project path="external/eclipse-windowbuilder" name="platform/external/eclipse-windowbuilder" />
-  <project path="external/eigen" name="platform/external/eigen" />
+  <project path="external/eigen" name="platform/external/eigen" />  
   <project path="external/elfutils" name="platform/external/elfutils" />
   <project path="external/embunit" name="platform/external/embunit" />
   <project path="external/emma" name="platform/external/emma" />
@@ -305,6 +285,7 @@
   <project path="hardware/ti/omap4xxx" name="android_hardware_ti_omap4xxx" remote="cm" revision="cm-10.2" />
   <project path="hardware/ti/wlan" name="android_hardware_ti_wlan" remote="cm" revision="cm-10.2" />
   <project path="hardware/ti/wpan" name="android_hardware_ti_wpan" remote="cm" revision="cm-10.2" />
+  <project path="kernel/htc/endeavoru" name="android_kernel_htc_endeavoru" remote="cm" revision="cm-10.1" />
   <project path="libcore" name="android_libcore" remote="cm" revision="cm-10.2" />
   <project path="libnativehelper" name="platform/libnativehelper" groups="pdk-java" />
   <project path="ndk" name="platform/ndk" />
@@ -312,7 +293,6 @@
   <project path="packages/apps/Apollo" name="android_packages_apps_Apollo" remote="cm" revision="cm-10.2" />
   <project path="packages/apps/BasicSmsReceiver" name="platform/packages/apps/BasicSmsReceiver" />
   <project path="packages/apps/Bluetooth" name="android_packages_apps_Bluetooth" remote="th" revision="jb-mr2" />
-  <project path="packages/apps/BluetoothExt" name="android_packages_apps_BluetoothExt" remote="cm" revision="cm-10.2" />
   <project path="packages/apps/Browser" name="platform/packages/apps/Browser" />
   <project path="packages/apps/Calculator" name="packages_apps_Calculator" remote="th" revision="jb-mr2" />
   <project path="packages/apps/Calendar" name="platform/packages/apps/Calendar" />
@@ -339,7 +319,7 @@
   <project path="packages/apps/Music" name="platform/packages/apps/Music" />
   <project path="packages/apps/MusicFX" name="platform/packages/apps/MusicFX" />
   <project path="packages/apps/Nfc" name="platform/packages/apps/Nfc" />
-  <project path="packages/apps/Onager" name="packages_apps_onager" remote="th" revision="jb-mr2" />
+  <project path="packages/apps/Onager" name="ljjehl-XHD/packages_apps_onager" remote="github" revision="jb-mr2" />
   <project path="packages/apps/OneTimeInitializer" name="platform/packages/apps/OneTimeInitializer" />
   <project path="packages/apps/ota-update-centre" name="packages_apps_ota_update_centre" remote="th" revision="jb-mr2" />
   <project path="packages/apps/PackageInstaller" name="packages_apps_PackageInstaller" remote="th" revision="jb-mr2" />
@@ -440,11 +420,8 @@
   <project path="tools/idea" name="platform/tools/idea" groups="notdefault,tools" />
   <project path="tools/motodev" name="platform/tools/motodev" groups="notdefault,motodev" />
   <project path="tools/swt" name="platform/tools/swt" groups="notdefault,tools" />
-  <project path="vendor/lge" name="vendor_lge" remote="th" revision="jb-mr2" groups="notdefault,vendor,lge" />
-  <project path="vendor/motorola" name="proprietary_vendor_motorola" remote="tm" revision="cm-10.2" groups="notdefault,vendor,motorola"  />
-  <project path="vendor/samsung" name="proprietary_vendor_samsung" remote="tm" revision="cm-10.2" groups="notdefault,vendor,samsung" />
-  <project path="vendor/asus" name="android_vendor_asus" remote="th" revision="jb-mr2" groups="notdefault,vendor,asus"/>
-  <project path="vendor/htc" name="proprietary_vendor_htc" remote="th" revision="jb-mr2" groups="notdefault,vendor,htc" />
+
+  <project path="vendor/htc" name="ljjehl-XHD/proprietary_vendor_htc" remote="github" revision="jb-mr2" />
   <project path="vendor/xenonhd" name="vendor_xenonhd" remote="th" revision="jb-mr2" />
 
   <project path="vendor/tmobile/apps/ThemeChooser" name="themes-platform-vendor-tmobile-apps-ThemeChooser" remote="aokp" revision="jb-mr2" />
